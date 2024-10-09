@@ -67,13 +67,9 @@ header > img {
   display: none;
   margin-right: 10px;
 }
-/* .title {
-  height: 385px;
-} */
 .foto-portada {
   width: 100%;
   position: absolute;
-  /* object-fit: fill; */
 }
 .title-portada {
   display: flex;
@@ -502,7 +498,7 @@ footer {
   padding: 25px;
   background-color: #000000;
 }
-ul > h5 {
+ul > p {
   padding-bottom: 15px;
   font-family: var(--MB-font-1);
   font-weight: 900;
@@ -540,9 +536,6 @@ ul > h5 {
     height: 575px;
   }
 }
-/* @media (max-width: 900px) {
-
-} */
 @media (max-width: 800px) {
   .title-portada > h2 {
     font-size: 20px;
