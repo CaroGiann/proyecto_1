@@ -67,6 +67,10 @@ header > img {
   display: none;
   margin-right: 10px;
 }
+.portada {
+  width: 100%;
+  height: 625px;
+}
 .foto-portada {
   width: 100%;
   position: absolute;
@@ -116,7 +120,7 @@ header > img {
   font-weight: 500;
 }
 .card-img {
-  width: 60%;
+  width: 50%;
   position: relative;
   margin-left: 20%;
   object-fit: contain;
@@ -298,14 +302,14 @@ input[type='radio']:checked + label {
 .maybach-img-info {
   position: relative;
   z-index: 2;
-  height: 700px;
+  height: 800px;
   margin-top: 10px;
 }
 .maybach-info {
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
-  top: 65%;
+  top: 80%;
   width: 100%;
   align-items: end;
   gap: 10px;
@@ -370,6 +374,9 @@ input[type='radio']:checked + label {
   font-size: 20px;
   margin-left: 20px;
   cursor: pointer;
+}
+.maybach-program-info > a {
+  margin-left: 20px;
 }
 .contact {
   display: flex;
@@ -517,12 +524,40 @@ ul > p {
   color: white;
 }
 /* MEDIA QUERIES */
+@media (max-width: 2300px) {
+  .modelos {
+    margin-top: 80px;
+  }
+  .maybach-program {
+    margin-top: 100px;
+  }
+  .maybach-info {
+    bottom: 50px;
+  }
+}
 @media (max-width: 1700px) {
-  .portada {
-    padding-bottom: 25%;
+  .modelos {
+    margin-top: 0px;
   }
   .maybach-img-info {
-    height: 750px;
+    height: 700px;
+  }
+  .maybach-program {
+    margin-top: 20px;
+  }
+  .maybach-info {
+    background-color: #c3c2c2;
+    top: 550px;
+    padding: 25px 0px 25px 15px;
+    height: 100px;
+  }
+}
+@media (max-width: 1500px) {
+  .portada {
+    height: 500px;
+  }
+  .maybach-info {
+    top: 450px;
   }
 }
 @media (max-width: 1050px) {
@@ -532,11 +567,20 @@ ul > p {
   .title-portada > p {
     font-size: 15px;
   }
+  .portada {
+    height: 350px;
+  }
+  .maybach-info {
+    top: 350px;
+  }
   .maybach-img-info {
-    height: 575px;
+    height: 600px;
   }
 }
 @media (max-width: 800px) {
+  .portada {
+    height: 300px;
+  }
   .title-portada > h2 {
     font-size: 20px;
   }
@@ -550,11 +594,10 @@ ul > p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500px;
   }
   .maybach-info {
-    background-color: #c3c2c2;
-    top: 0;
-    padding: 25px 0px 25px 0px;
+    top: 275px;
   }
   .maybach-img {
     position: relative;
@@ -563,10 +606,13 @@ ul > p {
     margin-top: 50px;
   }
   .maybach-program-img-0 {
-    width: 40%;
+    width: 45%;
   }
 }
 @media (max-width: 600px) {
+  .portada {
+    height: 200px;
+  }
   .menu-hamb {
     display: block;
     position: relative;
@@ -625,6 +671,13 @@ ul > p {
   .title-portada {
     top: 10px;
   }
+  .maybach-img-info {
+    height: 350px;
+  }
+  .maybach-info {
+    top: 200px;
+    margin-bottom: 25px;
+  }
   .maybach-program {
     margin-top: 15px;
   }
@@ -659,6 +712,7 @@ ul > p {
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    text-align: center;
   }
   footer > nav > ul > li {
     text-align: center;
@@ -687,7 +741,7 @@ ul > p {
     gap: 15px;
   }
   .maybach-img-info {
-    height: 475px;
+    height: 400px;
   }
   .title-portada > h2 {
     font-size: 15px;
